@@ -1,0 +1,54 @@
+{
+  "bio": {
+    "name": "Rohit Borra",
+    "shortBio": "I am a BEAST ",
+    "email": "rohit.b19@iiits.in",
+    "picture": ""
+  },
+  "education": [
+    {
+      "degree": "inter",
+      "institute": "fiit jee",
+      "startDate": "2016",
+      "endDate": "2018",
+      "description": "I have completed my junior calloge in fitjee with 90% marks."
+    },
+    {
+        "degree": "B.Tech",
+        "institute": "IIIT Sri City",
+        "startDate": "2019",
+        "endDate": "2023",
+        "description": "I am currently studying cse in this collage with a grade point of 8.5"
+      }
+  ],
+
+  "work": [
+    {
+      "role": "Project Manager",
+      "company": "offeteria",
+      "startDate": "10th feb 2022",
+      "endDate": "10th june 2022",
+      "description": "I have juided a team in completion of the application and deployed the application on amazon."
+    },
+    {
+        "role": "Data scientist",
+        "company": "swiggy",
+        "startDate": "15th june 2022",
+        "endDate": "15th dec 2022",
+        "description": "I am developimg a asr model wich can convert any indian language audio to that language trans script"
+      }
+  ],
+
+  "Achievements": [
+    {
+      "title": "Code Chef",
+      "date": "18-06-2022",
+      "description": "I have done many probleums in code chef and got 5 start in many programming languages."
+    },
+    {
+        "title": "Hackrank",
+        "date": "25-09-2022",
+        "description": "I have done many probleums in Hackrank and got 5 start in many programming languages."
+    }
+  ]
+}
