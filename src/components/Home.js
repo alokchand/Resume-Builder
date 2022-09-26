@@ -3,7 +3,7 @@ import { Box, Button, Input } from "@chakra-ui/react";
 import { fetchData } from "../Redux/actions";
 import { useSelector, useDispatch } from "react-redux";
 import { Tabs, TabList, TabPanels, Tab, TabPanel } from "@chakra-ui/react";
-
+import AddNew from "./AddNew";
 import {
   SimpleGrid,
   VStack,
@@ -13,9 +13,6 @@ import {
   Text,
 } from "@chakra-ui/react";
 import DisplayAll from "./DisplayAll";
-import EducationNew from "./AddNew/EducationNew";
-import WorksNew from "./AddNew/WorksNew";
-import AchivementsNew from "./AddNew/AchivementsNew";
 
 export default function Home() {
   const [swap, setSwap] = useState(true);
@@ -34,6 +31,7 @@ export default function Home() {
 
   var download = useSelector((store) => store);
   function onExport() {
+    setSwap(!swap);
     const jsonString = `data:text/json;chatset=utf-8,${encodeURIComponent(
       JSON.stringify(download)
     )}`;
@@ -136,20 +134,28 @@ export default function Home() {
             </GridItem>
 
             <GridItem>
-              <Button
-                marginRight={"350px"}
-                marginTop={"10px"}
-                colorScheme="green"
-                size="sm"
-                onClick={() => {
-                  temp.bio = bio;
-                  dispatch(fetchData(temp));
-                  setBio({ email: "", shortBio: "", name: "" });
-                  setSwap(!swap);
-                }}
-              >
-                {temp?.bio ? <>Edit</> : <>Save</>}
-              </Button>
+              {temp?.bio ? (
+                <>
+                  <Button colorScheme="blue">Edit</Button>
+                </>
+              ) : (
+                <>
+                  <Button
+                    marginRight={"350px"}
+                    marginTop={"10px"}
+                    colorScheme="green"
+                    size="sm"
+                    onClick={() => {
+                      temp.bio = bio;
+                      dispatch(fetchData(temp));
+                      setBio({ email: "", shortBio: "", name: "" });
+                      setSwap(!swap);
+                    }}
+                  >
+                    Save
+                  </Button>
+                </>
+              )}
             </GridItem>
           </VStack>
           <VStack marginRight={"400px"}>
@@ -194,11 +200,23 @@ export default function Home() {
         >
           <TabPanels>
             <TabPanel>
-              <EducationNew
-                data={myObject?.education}
-                swap={swap}
-                setSwap={setSwap}
-              />
+              {myObject?.education ? (
+                <>
+                  <AddNew
+                    data={myObject?.education}
+                    type={"education"}
+                    swap={swap}
+                    setSwap={setSwap}
+                  />
+                </>
+              ) : (
+                <AddNew
+                  data={[]}
+                  type={"education"}
+                  swap={swap}
+                  setSwap={setSwap}
+                />
+              )}
 
               <DisplayAll
                 data={myObject?.education}
@@ -208,7 +226,18 @@ export default function Home() {
               />
             </TabPanel>
             <TabPanel>
-              <WorksNew data={myObject?.work} swap={swap} setSwap={setSwap} />
+              {myObject?.work ? (
+                <>
+                  <AddNew
+                    data={myObject?.work}
+                    type={"work"}
+                    swap={swap}
+                    setSwap={setSwap}
+                  />
+                </>
+              ) : (
+                <AddNew data={[]} type={"work"} swap={swap} setSwap={setSwap} />
+              )}
 
               <DisplayAll
                 data={myObject?.work}
@@ -218,11 +247,23 @@ export default function Home() {
               />
             </TabPanel>
             <TabPanel>
-              <AchivementsNew
-                data={myObject?.Achievements}
-                swap={swap}
-                setSwap={setSwap}
-              />
+              {myObject?.Achievements ? (
+                <>
+                  <AddNew
+                    data={myObject?.Achievements}
+                    type={"Achievements"}
+                    swap={swap}
+                    setSwap={setSwap}
+                  />
+                </>
+              ) : (
+                <AddNew
+                  data={[]}
+                  type={"Achievements"}
+                  swap={swap}
+                  setSwap={setSwap}
+                />
+              )}
 
               <DisplayAll
                 data={myObject?.Achievements}

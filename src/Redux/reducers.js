@@ -1,4 +1,4 @@
-const reducers = (data = [], action) => {
+const reducers = (data = [{bio: {name:"", email: "", shortBio: ""}, education: [], work: [], Achievements: []}], action) => {
   switch (action.type) {
     case "FETCH_DATA":
       return action.payload;
