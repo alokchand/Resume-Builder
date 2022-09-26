@@ -89,7 +89,7 @@ export default function Home() {
         </Box>
       </Box>
       {/* -------------------------------------------------------------------------------------------------------------- */}
-      <VStack w="full" p={10}>
+      <VStack w="full"  style={{paddingTop:'40px'}}>
         <SimpleGrid columns={3} columnGap={10} w="full">
           <VStack>
             <GridItem>
@@ -118,7 +118,7 @@ export default function Home() {
               )}
             </GridItem>
             <GridItem >
-              <Text fontSize="xl">Email-ID:</Text>
+              <Text fontSize="xl" marginRight={"140px"} >Email:</Text>
 
               {temp?.bio ? (
                 <Text fontSize="l">{temp.bio.email}</Text>
@@ -136,7 +136,7 @@ export default function Home() {
             <GridItem>
               {temp?.bio ? (
                 <>
-                  <Button colorScheme="blue">Edit</Button>
+                  
                 </>
               ) : (
                 <>

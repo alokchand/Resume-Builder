@@ -1,13 +1,13 @@
 {
   "bio": {
     "name": "ALOKCHAND",
-    "shortBio": "I am a final year cse student in iiit sricity.",
+    "shortBio": "I am a final year computer science student in iiit sricity.",
     "email": "alokchand.m19@iiits.in",
     "picture": ""
   },
   "education": [
     {
-      "degree": "intermediate",
+      "degree": "Intermediate",
       "institute": "Narayana junior college",
       "startDate": "2016",
       "endDate": "2018",
@@ -25,14 +25,14 @@
   "work": [
     {
       "role": "Mern stack developer",
-      "company": "offeteria",
+      "company": "Offeteria",
       "startDate": "10th feb 2022",
       "endDate": "10th june 2022",
       "description": "I have juided a team in completion of the application and deployed the application on amazon."
     },
     {
         "role": "Mern stack developer",
-        "company": "dollinhg",
+        "company": "Dollinhg",
         "startDate": "15th june 2021",
         "endDate": "15th dec 2021",
         "description": "I have developed webpages using react and deployed the application."
