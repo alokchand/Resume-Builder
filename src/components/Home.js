@@ -102,9 +102,9 @@ export default function Home() {
           </VStack>
           <VStack marginRight={"300px"}>
             <GridItem>
-              <Text fontSize="xl">Name</Text>
+              <Text fontSize="xl">Name:</Text>
               {temp?.bio ? (
-                <Text mr={"100px"} fontSize="xl">
+                <Text mr={"100px"} fontSize="ll">
                   {temp.bio.name}
                 </Text>
               ) : (
@@ -117,11 +117,11 @@ export default function Home() {
                 />
               )}
             </GridItem>
-            <GridItem>
-              <Text fontSize="xl">Email-ID</Text>
+            <GridItem >
+              <Text fontSize="xl">Email-ID:</Text>
 
               {temp?.bio ? (
-                <Text fontSize="xl">{temp.bio.email}</Text>
+                <Text fontSize="l">{temp.bio.email}</Text>
               ) : (
                 <Input
                   width={"400px"}
@@ -159,10 +159,10 @@ export default function Home() {
             </GridItem>
           </VStack>
           <VStack marginRight={"400px"}>
-            <GridItem>
-              <Text fontSize="xl">Short Bio</Text>
+            <GridItem boxSize="300px">
+              <Text fontSize="xl">Short-Bio:</Text>
               {temp?.bio ? (
-                <Text fontSize="xl">{temp.bio.shortBio}</Text>
+                <Text fontSize="l">{temp.bio.shortBio}</Text>
               ) : (
                 <Textarea
                   rows={4}
