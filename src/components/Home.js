@@ -96,7 +96,7 @@ export default function Home() {
               <Image
                 borderRadius="full"
                 boxSize="150px"
-                src="https://www.toddleapp.com/wp-content/uploads/2021/09/Group-1608.png"
+                src="https://www.kindpng.com/picc/m/252-2524695_dummy-profile-image-jpg-hd-png-download.png"
               />
             </GridItem>
           </VStack>
