@@ -96,7 +96,7 @@ export default function Home() {
               <Image
                 borderRadius="full"
                 boxSize="150px"
-                src="https://www.nethravidyalaya.org/wp-content/uploads/2018/01/man-dummy.jpg"
+                src="http://www.thimphu.gov.bt/sites/thimphu.gov.bt/files/styles/staff_popup_/public/default_images/dummy_person.png?itok=_h_Sl9oz"
             </GridItem>
           </VStack>
           <VStack marginRight={"300px"}>
