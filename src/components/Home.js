@@ -96,7 +96,7 @@ export default function Home() {
               <Image
                 borderRadius="full"
                 boxSize="150px"
-                src="http://www.thimphu.gov.bt/sites/thimphu.gov.bt/files/styles/staff_popup_/public/default_images/dummy_person.png?itok=_h_Sl9oz"
+                src="https://www.kindpng.com/picc/m/252-2524695_dummy-profile-image-jpg-hd-png-download.png"
             </GridItem>
           </VStack>
           <VStack marginRight={"300px"}>
